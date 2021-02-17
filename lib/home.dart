@@ -99,10 +99,7 @@ class _HomeState extends State<Home> {
             );
           } else if (snapshot.hasError) {
             return Center(
-              child: Container(
-                child: Text("Something Went Wrong"),
-                color: Color(0xff1F1C18),
-              ),
+              child: Text("Something Went Wrong"),
             );
           } else {
             final data = snapshot.data;
@@ -110,10 +107,7 @@ class _HomeState extends State<Home> {
 
             if (data["Response"] == "False") {
               return Center(
-                child: Container(
-                  child: Text("Movie Not Found"),
-                  color: Color(0xff1F1C18),
-                ),
+                child: Text("Movie Not Found"),
               );
             } else
               return Container(
